@@ -1,0 +1,52 @@
+﻿<Page x:Class="WpfApplication3.MainPage "
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+     Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" Height="{DynamicResource {x:Static SystemParameters.MaximumWindowTrackHeightKey}}" Cursor="Hand"
+	Title="MainPage">
+
+    <Grid x:Name="MainPageGrid" >
+        
+            <Image x:Name="selected" Stretch="Fill">
+            </Image>
+        <Canvas x:Name="MainPageCanvas">
+            <Button x:Name="sale"  Click="ButtonOnClick" Background="{x:Null}" 
+                    BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+            <Button x:Name="stocks"  Click="ButtonOnClick" Background="{x:Null}" 
+                    BorderBrush="{x:Null}" Foreground="{x:Null}">
+            </Button>
+            <Button x:Name="dados"  Click="ButtonOnClick" Background="{x:Null}" 
+                    BorderBrush="{x:Null}" Foreground="{x:Null}">
+            </Button>
+            <Button x:Name="logOut"  Click="ButtonOnClick" Background="{x:Null}" 
+                    BorderBrush="{x:Null}" Foreground="{x:Null}">
+            </Button>
+            <Button x:Name="settings"  Click="ButtonOnClick" Background="{x:Null}" 
+                    BorderBrush="{x:Null}" Foreground="{x:Null}">
+            </Button>
+            <Viewbox x:Name="lojaView">
+                <TextBlock x:Name="lojaData" TextWrapping="Wrap"/>
+            </Viewbox>
+
+            <Viewbox x:Name="funcView">
+                <TextBlock x:Name="funcData" TextWrapping="Wrap" />
+            </Viewbox>
+            <Canvas x:Name="BlueBarCanvas1">
+                <Label Content="Bem-vindo:" Canvas.Left="633" Canvas.Top="147" Height="104" Width="218" FontSize="40" FontStyle="Italic" />
+                <Label x:Name="label_nome" Content="" Canvas.Left="606" Canvas.Top="207" Height="104" Width="394" FontSize="40" FontStyle="Italic" FontWeight="Bold" />
+                <Label x:Name="manager" Content="" Canvas.Left="390" Canvas.Top="314" FontSize="35" FontWeight="Bold" Background="Transparent" FontStyle="Italic" Width="251" Height="82"/>
+                <Label Content="ID: " Canvas.Left="563" Canvas.Top="499" FontSize="25" Background="Azure"/>
+                <Label x:Name="label_id" Content="" Canvas.Left="599" Canvas.Top="499" FontSize="25" Background="Azure" Width="111" FontWeight="Bold"/>
+                <Label Content="ID_Loja: " Canvas.Left="563" Canvas.Top="553" FontSize="25" Background="Azure"/>
+                <Label x:Name="label_idloja" Content="" Canvas.Left="653" Canvas.Top="553" FontSize="25" Background="Azure" FontWeight="Bold" RenderTransformOrigin="-0.76,0.302"/>
+                <Label Content="Trabalha na loja:" Canvas.Left="563" Canvas.Top="443" FontSize="25" Background="Azure"/>
+                <Label x:Name="label_loja" Content="" Canvas.Left="780" Canvas.Top="429" FontSize="40" Background="Azure" FontWeight="Bold" Width="220"/>
+            </Canvas>
+        </Canvas>
+        <Grid.Background>
+            <ImageBrush ImageSource="/WpfApplication3;component/Images/Background/mainPage.jpg" Stretch="Fill"/>
+        </Grid.Background>
+    </Grid>
+</Page>

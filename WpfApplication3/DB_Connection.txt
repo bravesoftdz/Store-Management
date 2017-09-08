@@ -1,0 +1,1 @@
+Poderá alterar as credenciais de acesso ao servidor no ficheiro: "Connection.cs"

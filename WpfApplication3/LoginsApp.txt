@@ -1,0 +1,10 @@
+Possíveis Logins na Aplicação:
+
+Gerente:
+User: tatiana@ua.pt
+Password: tatiana
+
+Funcionário:
+User: jfer@ua.pt
+Password: fernando
+
